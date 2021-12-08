@@ -1,0 +1,65 @@
+:root{
+	--black: #080A19;
+	--bg-box: #6EF095;
+	--purple: #6E2D95;
+	--dk-purple: #6E0595;
+	--lt-purple: #A88EFF;
+	--yellow: #FCE686;
+	--green: #93BA4C;
+	--border: 1vmin solid var(--black);
+}
+
+.container{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	text-align: center;
+}
+
+.tuner{
+	font-family: monospace;
+	border: var(--border);
+	background-color: var(--bg-box);
+	max-width: 500px;
+}
+
+.tuner-header{
+	border-bottom: var(--border);
+}
+.tuner-header h2{
+	color: var(--yellow);
+	font-size: 1.5em;
+	background-color: var(--black);
+	margin: 0;
+	padding: .5em 0;
+}
+
+.row{
+	padding: 2vw;
+}
+
+button{
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: var(--yellow)!important;
+	background-color: var(--purple);
+	border: var(--border);
+	width: 9vw;
+	height: 9vw;
+	font
+}
+button:hover{
+	background-color: var(--dk-purple);
+}
+button:active{
+	background-color: var(--lt-purple);
+}
+button:disabled{
+	background-color: var(--lt-purple);
+}
+
+#btnstop{
+	width: 100% !important;
+}
+
